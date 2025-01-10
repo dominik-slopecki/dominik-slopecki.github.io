@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const mobileMenuOpen = ref(false)
 const mobileMenuOpacity = ref('opacity-0')
+const menuOverlayBg = ref("bg-ds")
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -17,19 +18,24 @@ function triggerMenuStateChange(isOpen: boolean): void {
   if (isOpen) {
     mobileMenuOpen.value = true
     setTimeout(() => {
+      menuOverlayBg.value = 'bg-white';
       mobileMenuOpacity.value = 'opacity-100'
     }, 150)
   } else {
     mobileMenuOpacity.value = 'opacity-0'
     setTimeout(() => {
       mobileMenuOpen.value = false
+      menuOverlayBg.value = 'bg-ds';
     }, 150)
   }
 }
 </script>
 
 <template>
-  <nav class="flex items-center justify-between p-6 lg:px-8 bg-ds" aria-label="Global">
+  <nav id="menu-overlay"
+  class="flex items-center justify-between p-6 lg:px-8 transition-colors duration-500"
+  :class="menuOverlayBg"
+  aria-label="Global">
     <div class="flex lg:flex-1">
       <p class="-m-1.5 p-1.5">
         <span class="sr-only">DS Site</span>
