@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(to right, rgb(0 0 0) 0%, rgb(0 0 0) 75%, rgb(255 25 5) 110%);
+}
+
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
+.bg-ds {
+  background: linear-gradient(to right, rgb(0 0 0) 0%, rgb(0 0 0) 75%, rgb(255 25 5) 110%);
+}
