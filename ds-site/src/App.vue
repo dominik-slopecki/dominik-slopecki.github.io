@@ -1,7 +1,6 @@
 <template>
   <div id="home" class="hover:transition-all">
     <header class="fixed inset-x-0 top-0 z-50">
-      <meta property="og:image" content="https://dominik-slopecki.github.io/assets/ds-og-bg.jpg">
       <NavigationComponent></NavigationComponent>
     </header>
 
