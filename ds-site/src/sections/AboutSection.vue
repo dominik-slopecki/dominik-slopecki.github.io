@@ -72,8 +72,8 @@
     <div class="flex items-center gap-x-6 my-4">
       <img
         class="size-16 rounded-full"
-        src="https://media.licdn.com/dms/image/v2/C4E03AQHsyPnhJtZZow/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1604838831972?e=1741824000&v=beta&t=zAirN1ppvF_hAxJiqDPsL40QPIb3kaNxiaYZawiNw4I"
-        alt=""
+        src="/assets/dsface.jpg"
+        alt="Dominik Słopecki Face Image"
       />
 
       <div>
